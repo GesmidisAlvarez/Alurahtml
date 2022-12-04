@@ -1,15 +1,19 @@
 <meta charset="utf-8">
 HTML
+<h1>PROGRAMA</h1>
 <br>
-Estoy definiendo la edad de Cristian
+Estoy definiendo Edades
 <br>
 ?
+
 <script>
 	document.write("El año de naciomiento de cristian es... ")
 	document.write("<br>")
 	document.write(2020-29)
 </script>
 <script>
+//Usando textos y operacion en JavaScript
+
 	document.write("<br>");
 	document.write("El promedio de edad de Juan, Pedro y Carlos es .. ");
 	document.write("<br>");
@@ -21,20 +25,40 @@ Estoy definiendo la edad de Cristian
 	document.write("la suma de las edades de Juan, Pedro y Carlos es .. ");
 	document.write("<br>");
 	document.write(20+25+15);
-	document.write("<br>");
-	document.write("El año de naciomiento de Juan es... ");
-	document.write("<br>")
-	document.write(2022-39)
-	document.write("<br>");
-	document.write("El año de naciomiento de Pedro es... ");
-	document.write("<br>");
-	document.write(2022-30);
-	document.write("<br>");
-	document.write("El año de naciomiento de Carlos es... ");
-	document.write("<br>");
-	document.write(2022-32);
-</script>
 
-<script>
-    document.write("Mi edad es" + 12);
+//creando variables
+	var anho =2022;
+	document.write("<br>");
+	document.write("Juan tiene: " + (anho-2000) + "años");
+	document.write("<br>");
+	document.write("Pedro tiene: " + (anho-1995) + "años");
+	document.write("<br>");
+	anho = 2030
+	document.write("Carlos tiene: " + (anho-2005) + "años");
+	document.write("<br>");
+	document.write("<br>");
+	document.write("<br>");
+	document.write("<br>");
+	document.write("<br>");
+
+	anho=2023
+	document.write("Gesmidys tiene: " + (anho-1994) + "años");
+	document.write("<br>");
+	document.write("Tatiana tiene: " + (anho-1995) + "años");
+	document.write("<br>");
+	document.write("Karolay tiene: " + (anho-1997) + "años");
+	document.write("<br>");
+
+	var edadGesmidys= 29;
+	var edadTatiana= 28;
+	var edadkarolay =27;
+
+	var nombre1 ="Gesmidys";
+	var nombre2 ="Tatiana";
+	var nombre3 ="Karolay";
+
+	promedio = (edadGesmidys+edadTatiana+edadkarolay)/3
+
+	document.write("El promedio de las edades de:" + nombre1 + ", " + nombre2 + " y " + nombre3 +" es: " + Math.round(promedio));
+	document.write("<br>");
 </script>
