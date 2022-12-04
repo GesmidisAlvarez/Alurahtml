@@ -1,2 +1,2 @@
 # Alurahtml
-#JavaScriptBasic
+#JavaScriptBasicinHTML
