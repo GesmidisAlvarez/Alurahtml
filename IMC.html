@@ -1,0 +1,61 @@
+<meta charset="UTF-8">
+<h1> Programa Calcular IMC </h1>
+
+<script>
+
+function saltarLinea() {
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+}
+function imprimir(frase) {
+    document.write(frase);
+    saltarLinea();
+}
+
+//3er Ejemplo
+
+function calcularImc(peso,altura){
+    return (peso/(altura*altura));   
+}
+
+nombre = prompt("Infome su nombre")
+pesoInformado = prompt(nombre +", Informe su peso")
+alturaInformado = prompt(nombre + ", Informe su altura")
+imcCalculado = calcularImc(pesoInformado,alturaInformado)
+imprimir (nombre + "su imc calculado es: " + imcCalculado)
+
+
+//function calcularImc(peso,altura,nombre){
+   // imc = peso/(altura*altura);
+   // imprimir("El IMC calculado es " + imc);
+//}
+
+
+//Indice masa Corporal Cristian
+//calcularImc(71,1.72,"Cristian");
+//Indice de masa corporal de Felipe
+//calcularImc(75,1.80,"Felipe");
+
+
+
+//2do Ejemplo- Promedio
+
+//function saltarLinea() {
+    //document.write("<br>");
+    //document.write("<br>");
+    //document.write("<br>");
+//}
+
+//function imprimir(frase) {
+    //document.write(frase);
+    //saltarLinea();
+//}
+
+//function calcularImc(peso,altura){
+    //return (peso/(altura*altura));   
+//}
+
+//imprimir("promedio del imc calculado de Cristian y Felipe es: " + (calcularImc(71,1.72)+calcularImc(75,1.80)/2);
+
+</script>
