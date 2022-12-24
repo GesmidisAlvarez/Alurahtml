@@ -1,0 +1,19 @@
+body{
+    background-color: aquamarine;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    background-color: darkseagreen;
+    color: black;
+}
+.verde{
+    color: darkgreen;
+}
+.rojo{
+    color: red;
+}
