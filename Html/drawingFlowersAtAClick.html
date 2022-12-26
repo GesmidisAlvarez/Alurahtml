@@ -1,0 +1,40 @@
+<meta charset="UTF-8">
+
+<canvas width="600" height="400"> </canvas>
+
+<script>
+
+    var pantalla = document.querySelector("canvas");
+    var pincel = pantalla.getContext("2d");
+
+    pincel.fillStyle = "grey"; 
+    pincel.fillRect(0,0,600,400); 
+
+    function exhibirAlerta(evento){
+        var x = evento.pageX - pantalla.offsetLeft; //pos x
+        var y = evento.pageY - pantalla.offsetTop; 
+        console.log(evento);
+        alert(x + "," + y);
+    }
+    function dibujarCirculo(x, y, radio, color) {
+
+        pincel.fillStyle = color;
+        pincel.beginPath();
+        pincel.arc(x, y, radio, 0, 2*3.14);
+        pincel.fill();  
+    }
+    function dibujarFlores(evento){
+        var x = evento.pageX - pantalla.offsetLeft; //pos x
+        var y = evento.pageY - pantalla.offsetTop;
+        
+        dibujarCirculo(x, y+15, 5, "lightcoral");
+        dibujarCirculo(x, y, 5, "lightpink");
+        dibujarCirculo(x, y-15, 5, "lightcoral");
+        dibujarCirculo(x-15, y, 5, "lightcoral");
+        dibujarCirculo(x+15, y, 5, "lightcoral");
+        console.log(x + "," + y);
+    } 
+
+        pantalla.onclick = dibujarFlores;
+</script>
+
